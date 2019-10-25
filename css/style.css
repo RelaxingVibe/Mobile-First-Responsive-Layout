@@ -1,0 +1,230 @@
+
+/* =============================
+    Base Element Styles
+==============================*/
+
+* { box-sizing: border-box; }
+
+body {
+    text-align: center;
+    background: rgb(246, 246, 246);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+p { padding-bottom: 1rem; }
+
+h3 { text-transform: capitalize; }
+
+li {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+img { width: 100%; }
+
+a { text-decoration: none; }
+
+/* =============================
+    Base Layout Styles
+==============================*/
+
+.main-header {
+    padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.name,
+.main-nav {
+    margin: 6px 0;
+    padding: 0;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+    padding: 10px;
+}
+
+.main-nav li {
+    margin: 0 .1em 1em;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.my-portfolio {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background-color: azure;
+}
+
+.my-contact {
+    margin: 2rem 0;
+}
+
+.main-footer {
+    border-top: 1px solid lightslategrey;
+    margin: 2rem 0;
+}
+
+.footer-name {
+    float: left;
+    margin-left: 1rem;
+}
+
+.footer-btt {
+    float: right;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+
+/* =============================
+    Media Queries
+==============================*/
+
+@media (max-width: 767px) {
+    .footer-nav {
+        display: none;
+    }
+} 
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 1em;
+    }
+
+    .main-nav,
+    .main-nav li {
+        display: inline-block;
+        background:  none;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .my-profile {
+        height: 200px;
+    }
+
+    .my-profile img {
+        width: 35%;
+        float: right;
+    }
+
+    .my-profile p {
+        width: 60%;
+        float: left; 
+        font-size: 1.2em; 
+        margin: 0 2px;
+    }
+
+    .wrapper p {
+        padding: 0 3rem 2rem;
+    }
+
+    .my-portfolio img {
+        width: 95%
+    }
+
+    .marketing,
+    .search,
+    .travle,
+    .spots,
+    .photo,
+    .calcul {
+        width: 50%;
+    }
+
+    .f-left {
+        float: left;
+    }
+
+    .f-right {
+        float: right;
+    }
+
+    .my-contact {
+        padding-top: 1em;
+    }
+    
+    .my-contact p {
+        margin: 0 5.5rem;
+        text-align: center;
+    }
+
+    .footer-btt {
+        display: none;
+    }
+
+    .footer-nav {
+        float: right;
+    }
+    
+    .footer-nav a {
+        display: block;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        padding-right: 1em;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .name,
+    .main-nav,
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        float: left;
+        margin-left: 1em;
+    }
+
+    .my-profile {
+        height: 250px;
+    }
+
+    .my-profile img {
+        float: right;
+    }
+
+    .my-profile p {
+        float: left; 
+        font-size: 1.2em; 
+        margin: 0 2px;
+    }
+
+    .marketing,
+    .search,
+    .travle,
+    .spots,
+    .photo,
+    .calcul {
+        width: 33%;
+    }
+}
+
+/* =============================
+    Clearfix
+==============================*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
